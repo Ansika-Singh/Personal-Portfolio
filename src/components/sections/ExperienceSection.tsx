@@ -10,7 +10,7 @@ export default function ExperienceSection() {
       role: "Founder's Office Intern",
       type: "Internship",
       date: "Sept 2026 – Present",
-      location: "New Delhi",
+      location: "Remote",
       description: [
         "Involved in business strategy, operations, partnerships, research, and execution.",
         "Contributing directly to key initiatives and decision-making processes.",
