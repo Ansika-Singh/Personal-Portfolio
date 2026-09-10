@@ -14,7 +14,7 @@ export default function ProjectsSection() {
       badge: "🏆 1st Prize Winner, Aldeastorm 2026 | Collaboration Project",
       tech: ["Web Technologies", "MediaPipe", "Web Speech API", "TTS/STT", "Braille Output"],
       description: "Unified real-time communication platform with Medical Mode and Accessibility Mode integrating sign language detection (MediaPipe), pictogram AAC board, and TTS/STT. Screen reader with Braille output, multilingual support; led frontend development and ideation.",
-      github: "https://github.com/bishnu24ise-prog/UnifyTalk",
+      github: "https://github.com/Ansika-Singh/UnifyTalk",
       live: "https://unify-talk.vercel.app"
     },
     {
