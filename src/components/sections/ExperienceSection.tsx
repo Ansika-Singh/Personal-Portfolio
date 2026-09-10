@@ -6,6 +6,20 @@ export default function ExperienceSection() {
   const experiences = [
     {
       id: "01",
+      company: "PHICSIT InfoTech Pvt. Ltd.",
+      role: "Founder's Office Intern",
+      type: "Internship",
+      date: "Sept 2026 – Present",
+      location: "New Delhi",
+      description: [
+        "Involved in business strategy, operations, partnerships, research, and execution.",
+        "Contributing directly to key initiatives and decision-making processes.",
+        "Gaining exposure to startup operations, strategic thinking, and cross-functional collaboration."
+      ],
+      skills: ["Business Strategy", "Operations", "Partnerships", "Research", "Execution"]
+    },
+    {
+      id: "02",
       company: "Open Source Connect India",
       role: "Next.js Developer",
       type: "Active Role",
@@ -19,7 +33,7 @@ export default function ExperienceSection() {
       skills: ["Next.js", "React", "Open Source", "Community Building"]
     },
     {
-      id: "02",
+      id: "03",
       company: "One Tappe (Tappverse)",
       role: "Back End Developer",
       type: "Active Role",
@@ -33,7 +47,7 @@ export default function ExperienceSection() {
       skills: ["MERN Stack", "REST APIs", "Node.js", "AI Integration"]
     },
     {
-      id: "03",
+      id: "04",
       company: "NoviTech R&D",
       role: "Full Stack Development Intern",
       type: "Internship",
@@ -47,7 +61,7 @@ export default function ExperienceSection() {
       skills: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js"]
     },
     {
-      id: "04",
+      id: "05",
       company: "DevStack Technologies",
       role: "Web Developer Intern",
       type: "Internship",
@@ -61,7 +75,7 @@ export default function ExperienceSection() {
       skills: ["HTML5", "CSS3", "JavaScript", "Responsive Design"]
     },
     {
-      id: "05",
+      id: "06",
       company: "InAmigos Foundation",
       role: "Visual Design & Content Intern",
       type: "Internship",
