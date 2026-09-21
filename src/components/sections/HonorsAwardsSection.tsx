@@ -3,8 +3,9 @@ import React from "react";
 
 export default function HonorsAwardsSection() {
   const awards = [
-    { src: "/achievements/aideastorm_1.jpg", title: "AIdeastorm Hackathon 2026 Winner" },
-    { src: "/achievements/aideastorm_2.jpg", title: "AIdeastorm Hackathon 2026 Winner" },
+    { src: "/achievements/luminix26_runner.jpg", title: "LUMINIX'26 National Hackathon – 2nd Prize (1st Runner Up)" },
+    { src: "/achievements/aideastorm_1.jpg", title: "AIdeastorm Hackathon 2026 Winner (1st Prize)" },
+    { src: "/achievements/aideastorm_2.jpg", title: "AIdeastorm Hackathon 2026 Winner (1st Prize)" },
     { src: "/achievements/hackhazards_1.jpg", title: "Hackhazards Top 100 Project" },
     { src: "/achievements/hackhazards_2.png", title: "Hackhazards Top 100 Project" },
     { src: "/achievements/outstanding_intern.png", title: "Outstanding Intern Award" },
@@ -22,7 +23,7 @@ export default function HonorsAwardsSection() {
           Honors & Awards
         </h3>
         <p className="text-zinc-400 max-w-2xl">
-          A collection of my hackathon victories, internship excellence awards, and notable achievements.
+          A collection of my 3x hackathon victories (including 2nd Prize at LUMINIX'26 and 1st Prize at AIdeastorm '26), internship excellence awards, and notable achievements.
         </p>
       </div>
 

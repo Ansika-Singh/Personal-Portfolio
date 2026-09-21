@@ -11,9 +11,9 @@ export default function ProjectsSection() {
   const projects = [
     {
       title: "UnifyTalk — Accessibility Communication Platform",
-      badge: "🏆 1st Prize Winner, Aldeastorm 2026 | Collaboration Project",
-      tech: ["Web Technologies", "MediaPipe", "Web Speech API", "TTS/STT", "Braille Output"],
-      description: "Unified real-time communication platform with Medical Mode and Accessibility Mode integrating sign language detection (MediaPipe), pictogram AAC board, and TTS/STT. Screen reader with Braille output, multilingual support; led frontend development and ideation.",
+      badge: "🏆 1st Prize, AIdeastorm '26 | 🥈 2nd Prize (1st Runner Up), LUMINIX'26",
+      tech: ["Web Technologies", "MediaPipe", "Web Speech API", "TTS/STT", "Braille Output", "System Design"],
+      description: "Unified real-time communication platform with Medical Mode and Accessibility Mode integrating sign language detection (MediaPipe), pictogram AAC board, and TTS/STT. Secured 1st Prize at AIdeastorm 2026 and 1st Runner Up (2nd Prize) at LUMINIX'26 National Hackathon with Team Pixel Pirates.",
       github: "https://github.com/Ansika-Singh/UnifyTalk",
       live: "https://unify-talk.vercel.app"
     },

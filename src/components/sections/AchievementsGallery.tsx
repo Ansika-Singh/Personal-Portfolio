@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function AchievementsGallery() {
   const certificates = [
+    { src: "/achievements/luminix26_runner.jpg", title: "LUMINIX'26 2nd Prize (Runner Up)" },
     { src: "/achievements/HACKHAZARDS_26_Achievement_Certificate-1.png", title: "Hackhazards '26" },
     { src: "/achievements/infosys_certificate.png", title: "Infosys Pragati Cohort 8" },
     { src: "/achievements/salesforce_certificate.jpg", title: "Salesforce AI Builders" },

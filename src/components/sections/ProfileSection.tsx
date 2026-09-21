@@ -70,7 +70,7 @@ export default function ProfileSection() {
                 About Me
               </h3>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                Information Science student at Cambridge Institute of Technology specializing in Web Development, UI/UX Design, and AI/ML. Built UnifyTalk (1st Prize, Aldeastorm 2026), Alias (AI facial recognition attendance system), Agni AI (India-first AI 3D home designer with Vastu Shastra integration), and Nexus (semantic people discovery platform). Experienced in full-stack MERN development with a focus on solving real-world problems through technology.
+                Information Science student at Cambridge Institute of Technology specializing in Web Development, System Design, DSA, and AI/ML. 3x Hackathon Winner—securing 2nd Prize at LUMINIX'26 National Hackathon and 1st Prize at AIdeastorm 2026 for UnifyTalk. Open Source Project Admin at Open Source Connect India 2026 and Contributor at Social Winter of Code (SWOC). Experienced in full-stack MERN development and algorithmic problem solving on LeetCode.
               </p>
             </GlassCard>
           </motion.div>
@@ -106,7 +106,7 @@ export default function ProfileSection() {
               </h3>
               <div className="flex flex-wrap gap-2 text-xs">
                 {[
-                  "Python", "Java", "JavaScript", "PHP", "C", "HTML", "CSS",
+                  "System Design", "DSA", "LeetCode", "Python", "Java", "JavaScript", "PHP", "C", "HTML", "CSS",
                   "MERN Stack", "Next.js", "FastAPI", "REST APIs", "Android (Java)",
                   "Three.js", "MediaPipe", "TensorFlow.js", "UI/UX Design",
                   "Git/GitHub", "VS Code", "Postman", "Vercel", "Docker"
@@ -119,21 +119,23 @@ export default function ProfileSection() {
             <GlassCard id="experience" className="p-6 flex flex-col hover:border-cyan-500/50 transition-colors duration-300">
               <h3 className="text-xl font-bold uppercase tracking-wide text-white mb-4 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-[#6366F1]"></span>
-                Work Experience
+                Work Experience & Open Source
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
                 <div className="border-t border-white/10 pt-3">
-                  <div className="text-white font-medium mb-1">Next.js Developer</div>
-                  <div className="text-[#06B6D4] text-xs mb-2">Open Source Connect (Aug '26 – Present)</div>
+                  <div className="text-white font-medium mb-1">Project Admin & Next.js Dev</div>
+                  <div className="text-[#06B6D4] text-xs mb-2">Open Source Connect India (Aug '26 – Present)</div>
+                  <p className="text-zinc-400 text-xs">Open Source Project Administration</p>
                 </div>
                 <div className="border-t border-white/10 pt-3">
-                  <div className="text-white font-medium mb-1">Back End Developer</div>
-                  <div className="text-[#06B6D4] text-xs mb-2">One Tappe (Aug '26 – Present)</div>
+                  <div className="text-white font-medium mb-1">Open Source Contributor</div>
+                  <div className="text-[#06B6D4] text-xs mb-2">Social Winter of Code (SWOC 2026)</div>
+                  <p className="text-zinc-400 text-xs">Full-stack contributions & code reviews</p>
                 </div>
                 <div className="border-t border-white/10 pt-3">
-                  <div className="text-white font-medium mb-1">Web Developer Intern</div>
-                  <div className="text-[#06B6D4] text-xs mb-2">DevStack Technologies (June '26)</div>
-                  <p className="text-zinc-400 text-xs italic">Outstanding Intern Award</p>
+                  <div className="text-white font-medium mb-1">Founder's Office Intern</div>
+                  <div className="text-[#06B6D4] text-xs mb-2">PHICSIT InfoTech (Sept '26 – Present)</div>
+                  <p className="text-zinc-400 text-xs">Strategy, operations & system architecture</p>
                 </div>
               </div>
             </GlassCard>

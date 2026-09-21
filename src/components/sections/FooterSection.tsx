@@ -6,9 +6,14 @@ import { Github, Linkedin, LeetCode } from "@/components/ui/Icons";
 export default function FooterSection() {
   const achievements = [
     {
+      icon: "🥈",
+      title: "2nd Prize / 1st Runner Up",
+      event: "LUMINIX'26 National Hackathon (UnifyTalk)",
+    },
+    {
       icon: "🏆",
       title: "1st Prize",
-      event: "Aldeastorm Hackathon 2026 (UnifyTalk)",
+      event: "AIdeastorm Hackathon 2026 (UnifyTalk)",
     },
     {
       icon: "🌐",

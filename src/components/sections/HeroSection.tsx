@@ -47,7 +47,7 @@ export default function HeroSection() {
 
       {/* Summary */}
       <p className="text-zinc-400 text-lg md:text-xl font-normal leading-relaxed max-w-2xl mb-12">
-        Information Science student at Cambridge Institute of Technology specializing in full-stack MERN development, UI/UX design, and AI/ML. Winner of 2 Hackathons.
+        Information Science student at Cambridge Institute of Technology specializing in full-stack MERN development, System Design, DSA, and AI/ML. 3x Hackathon Winner (including 2nd Prize at LUMINIX'26 & 1st Prize at AIdeastorm '26) and Open Source Contributor.
       </p>
 
       {/* Action Buttons */}

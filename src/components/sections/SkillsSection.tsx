@@ -6,18 +6,21 @@ import { Code, Database, Smartphone, Wrench } from "lucide-react";
 export default function SkillsSection() {
   const skillCategories = [
     {
-      title: "Languages & Core",
+      title: "Languages & Problem Solving (DSA)",
       icon: <Code size={20} />,
       color: "from-blue-500 to-cyan-500",
-      skills: ["Python", "Java", "HTML", "CSS", "JavaScript", "PHP", "C", "DSA"],
+      skills: [
+        "Data Structures & Algorithms (DSA)", "LeetCode", "Problem Solving",
+        "Java", "Python", "C", "JavaScript", "HTML5", "CSS3", "PHP"
+      ],
     },
     {
-      title: "Web & Backend",
+      title: "Web & System Design",
       icon: <Database size={20} />,
       color: "from-emerald-500 to-teal-500",
       skills: [
-        "MongoDB", "Express.js", "React.js", "Node.js", 
-        "Next.js", "FastAPI", "REST APIs"
+        "System Design", "Scalable Web Architecture", "REST APIs",
+        "MongoDB", "Express.js", "React.js", "Node.js", "Next.js", "FastAPI"
       ],
     },
     {
@@ -25,19 +28,18 @@ export default function SkillsSection() {
       icon: <Smartphone size={20} />,
       color: "from-pink-500 to-pink-500",
       skills: [
-        "Android (Java)", "Agentic AI", "Gen AI", "AI", "ML", "DL",
-        "TensorFlow.js", "MediaPipe", "UI/UX Design", "Canva", 
-        "Visual Design", "Content Writing"
+        "Android (Java)", "Agentic AI", "Gen AI", "AI / ML", "TensorFlow.js",
+        "MediaPipe", "UI/UX Design", "Visual Design", "Content Writing"
       ],
     },
     {
-      title: "Tools, Cloud & Platforms",
+      title: "Tools, Cloud & Competitive",
       icon: <Wrench size={20} />,
       color: "from-orange-500 to-red-500",
       skills: [
-        "Cloud Computing", "Git", "GitHub", "VS Code", "Postman", 
-        "Vercel", "Render", "Docker (basic)", "Firebase", "IndexedDB",
-        "LeetCode", "HackerRank"
+        "LeetCode", "Git", "GitHub", "VS Code", "Postman", 
+        "Vercel", "Render", "Docker", "Firebase", "IndexedDB",
+        "Cloud Computing", "HackerRank"
       ],
     }
   ];

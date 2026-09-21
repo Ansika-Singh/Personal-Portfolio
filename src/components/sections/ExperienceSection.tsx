@@ -20,20 +20,34 @@ export default function ExperienceSection() {
     },
     {
       id: "02",
-      company: "Open Source Connect India",
-      role: "Next.js Developer",
-      type: "Active Role",
+      company: "Open Source Connect India 2026",
+      role: "Project Admin & Next.js Developer",
+      type: "Open Source Leadership",
       date: "Aug 2026 – Present",
       location: "Remote",
       description: [
-        "Selected as Next.js Developer for Open Source Connect India 2026.",
-        "Contributing to core initiatives and developer adoption strategies.",
-        "Building and optimizing open source platforms for community engagement."
+        "Serving as Project Admin for Open Source Connect India 2026, leading repository governance and community initiatives.",
+        "Building and optimizing responsive Next.js platforms to drive developer adoption and open source collaboration.",
+        "Reviewing pull requests, mentoring contributors, and establishing clean coding and system architecture standards."
       ],
-      skills: ["Next.js", "React", "Open Source", "Community Building"]
+      skills: ["Project Administration", "Next.js", "React", "Open Source", "System Design", "Community Leadership"]
     },
     {
       id: "03",
+      company: "Social Winter of Code (SWOC)",
+      role: "Open Source Contributor",
+      type: "Open Source",
+      date: "2026",
+      location: "Remote",
+      description: [
+        "Active contributor at Social Winter of Code (SWOC), making impactful contributions to real-world open-source repositories.",
+        "Implemented features, optimized UI performance, and resolved core issues across full-stack codebases.",
+        "Collaborated closely with maintainers following git workflows, CI/CD pipelines, and high code quality standards."
+      ],
+      skills: ["Open Source", "Git & GitHub", "React", "JavaScript", "Problem Solving", "Collaboration"]
+    },
+    {
+      id: "04",
       company: "One Tappe (Tappverse)",
       role: "Back End Developer",
       type: "Active Role",
@@ -44,10 +58,10 @@ export default function ExperienceSection() {
         "Engineering REST APIs for seamless data flow and integration.",
         "Implementing AI/LLM-powered recommendation and support features to enhance user experience."
       ],
-      skills: ["MERN Stack", "REST APIs", "Node.js", "AI Integration"]
+      skills: ["MERN Stack", "System Design", "REST APIs", "Node.js", "AI Integration"]
     },
     {
-      id: "04",
+      id: "05",
       company: "NoviTech R&D",
       role: "Full Stack Development Intern",
       type: "Internship",
@@ -61,7 +75,7 @@ export default function ExperienceSection() {
       skills: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js"]
     },
     {
-      id: "05",
+      id: "06",
       company: "DevStack Technologies",
       role: "Web Developer Intern",
       type: "Internship",
@@ -75,7 +89,7 @@ export default function ExperienceSection() {
       skills: ["HTML5", "CSS3", "JavaScript", "Responsive Design"]
     },
     {
-      id: "06",
+      id: "07",
       company: "InAmigos Foundation",
       role: "Visual Design & Content Intern",
       type: "Internship",

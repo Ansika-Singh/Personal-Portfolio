@@ -28,15 +28,20 @@ export default function AboutSection() {
           
           <div className="space-y-4 text-zinc-400 font-normal leading-relaxed flex-grow">
             <p>
-              I am an Information Science student and passionate full-stack developer specializing in the MERN stack. My mission is to build digital experiences that are not just highly performant and scalable, but also deeply accessible.
+              I am an Information Science student and passionate full-stack developer specializing in the MERN stack, System Design, and Data Structures & Algorithms. My mission is to architect digital experiences that are performant, scalable, and deeply accessible.
             </p>
             <p>
-              By leveraging applied AI systems and modern web technologies, I love solving real-world challenges—whether that's creating offline-first applications for rural India or building inclusive platforms for marginalized communities.
+              As a 3x hackathon winner (securing 2nd Prize at LUMINIX'26 and 1st Prize at AIdeastorm '26) and active open source leader—serving as Project Admin at Open Source Connect India 2026 and contributor at Social Winter of Code (SWOC)—I love solving real-world challenges with applied AI and robust architecture.
             </p>
             <div className="flex items-center gap-4 mt-8 pt-6 border-t border-white/5">
               <div className="flex flex-col">
-                <span className="text-3xl font-black text-white">4+</span>
+                <span className="text-3xl font-black text-white">3x</span>
                 <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider">Hackathons Won</span>
+              </div>
+              <div className="w-[1px] h-10 bg-white/10"></div>
+              <div className="flex flex-col">
+                <span className="text-3xl font-black text-white">2+</span>
+                <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider">Open Source Orgs</span>
               </div>
               <div className="w-[1px] h-10 bg-white/10"></div>
               <div className="flex flex-col">
