@@ -34,7 +34,10 @@
   perspective: 500px;
   transform: translate3d(0, 0, 0.1px);
   position: relative;
-  touch-action: none;
+  touch-action: pan-y;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .pc-behind {
@@ -58,8 +61,10 @@
 }
 
 .pc-card {
-  height: 80svh;
-  max-height: 540px;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  max-height: 520px;
   display: grid;
   aspect-ratio: 0.718;
   border-radius: var(--card-radius);

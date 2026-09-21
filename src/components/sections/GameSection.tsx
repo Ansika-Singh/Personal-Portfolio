@@ -23,55 +23,55 @@ export default function GameSection() {
       id="games"
       className="w-full relative"
     >
-      <h3 className="text-3xl font-black text-white tracking-tight mb-10 flex items-center gap-3">
-        <span className="w-12 h-[2px] bg-cyan-500"></span>
+      <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight mb-6 sm:mb-10 flex items-center gap-3">
+        <span className="w-8 sm:w-12 h-[2px] bg-cyan-500"></span>
         Games
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
         {games.map((game, index) => (
           <div 
             key={index}
-            className="bg-zinc-900/60 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:-translate-y-1.5 hover:border-cyan-500/40 hover:shadow-cyan-500/10 hover:shadow-2xl transition-all duration-300 flex flex-col h-full group"
+            className="bg-zinc-900/60 backdrop-blur-lg border border-white/10 rounded-2xl p-5 sm:p-8 hover:-translate-y-1.5 hover:border-cyan-500/40 hover:shadow-cyan-500/10 hover:shadow-2xl transition-all duration-300 flex flex-col h-full group"
           >
             {game.badge && (
-              <div className="inline-flex items-center gap-2 bg-pink-500/10 text-pink-400 border border-pink-500/20 px-3 py-1 rounded-full text-xs font-bold mb-4 self-start">
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-pink-500/10 text-pink-400 border border-pink-500/20 px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-bold mb-4 self-start">
                 <Gamepad2 size={14} />
                 {game.badge}
               </div>
             )}
             
-            <h4 className="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
+            <h4 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4 group-hover:text-cyan-400 transition-colors break-words">
               {game.title.split(" — ")[0]}
               {game.title.includes(" — ") && (
-                <span className="block text-lg text-zinc-400 font-medium mt-1">
+                <span className="block text-sm sm:text-base md:text-lg text-zinc-400 font-medium mt-1">
                   {game.title.split(" — ")[1]}
                 </span>
               )}
             </h4>
 
-            <div className="flex flex-wrap gap-2 mb-6">
+            <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
               {game.tech.map((t, i) => (
-                <span key={i} className="text-xs font-mono text-cyan-400 bg-cyan-950/30 px-2 py-1 rounded border border-cyan-900/50">
+                <span key={i} className="text-[11px] sm:text-xs font-mono text-cyan-400 bg-cyan-950/30 px-2 py-0.5 sm:py-1 rounded border border-cyan-900/50">
                   {t}
                 </span>
               ))}
             </div>
 
-            <p className="text-zinc-400 text-sm leading-relaxed mb-8 flex-grow">
+            <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed mb-6 sm:mb-8 flex-grow">
               {game.description}
             </p>
 
             {(game.github || game.live) && (
-              <div className="flex items-center gap-4 mt-auto pt-6 border-t border-white/10">
+              <div className="flex items-center gap-4 mt-auto pt-4 sm:pt-6 border-t border-white/10">
                 {game.github && (
                   <a 
                     href={game.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm font-bold text-zinc-300 hover:text-white transition-colors"
+                    className="flex items-center gap-2 text-xs sm:text-sm font-bold text-zinc-300 hover:text-white transition-colors"
                   >
-                    <GithubIcon size={18} />
+                    <GithubIcon size={16} />
                     Code
                   </a>
                 )}
@@ -80,9 +80,9 @@ export default function GameSection() {
                     href={game.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm font-bold text-zinc-300 hover:text-cyan-400 transition-colors"
+                    className="flex items-center gap-2 text-xs sm:text-sm font-bold text-zinc-300 hover:text-cyan-400 transition-colors"
                   >
-                    <ExternalLink size={18} />
+                    <ExternalLink size={16} />
                     Play Now
                   </a>
                 )}

@@ -49,29 +49,29 @@ export default function SkillsSection() {
       id="skills"
       className="w-full relative"
     >
-      <h3 className="text-3xl font-black text-white tracking-tight mb-10 flex items-center gap-3">
-        <span className="w-12 h-[2px] bg-cyan-500"></span>
+      <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight mb-6 sm:mb-10 flex items-center gap-3">
+        <span className="w-8 sm:w-12 h-[2px] bg-cyan-500"></span>
         Technical Skills
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         {skillCategories.map((category, index) => (
           <div 
             key={index} 
-            className="bg-zinc-900/60 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:-translate-y-1 hover:border-white/30 transition-all duration-300 group"
+            className="bg-zinc-900/60 backdrop-blur-lg border border-white/10 rounded-2xl p-4 sm:p-6 hover:-translate-y-1 hover:border-white/30 transition-all duration-300 group"
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className={`p-2 rounded-lg bg-gradient-to-br ${category.color} text-white shadow-lg`}>
+            <div className="flex items-center gap-2.5 sm:gap-3 mb-4 sm:mb-6">
+              <div className={`p-2 rounded-lg bg-gradient-to-br ${category.color} text-white shadow-lg shrink-0`}>
                 {category.icon}
               </div>
-              <h4 className="text-lg font-bold text-white">{category.title}</h4>
+              <h4 className="text-base sm:text-lg font-bold text-white">{category.title}</h4>
             </div>
 
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-1.5 sm:gap-2">
               {category.skills.map((skill, i) => (
                 <span 
                   key={i}
-                  className="px-3 py-1.5 text-xs font-mono text-zinc-300 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 hover:text-white hover:border-cyan-500/50 transition-all cursor-default"
+                  className="px-2.5 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-xs font-mono text-zinc-300 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 hover:text-white hover:border-cyan-500/50 transition-all cursor-default"
                 >
                   {skill}
                 </span>

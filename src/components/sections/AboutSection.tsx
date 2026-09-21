@@ -16,9 +16,9 @@ export default function AboutSection() {
         About Me
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
         {/* Card 1: About Me text */}
-        <div className="bg-zinc-900/60 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:-translate-y-1.5 hover:border-cyan-500/40 hover:shadow-cyan-500/10 hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+        <div className="bg-zinc-900/60 backdrop-blur-lg border border-white/10 rounded-2xl p-5 sm:p-8 hover:-translate-y-1.5 hover:border-cyan-500/40 hover:shadow-cyan-500/10 hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
           <div className="flex items-center gap-3 mb-6">
             <div className="p-3 bg-cyan-500/10 rounded-lg text-cyan-400">
               <Code2 size={24} />
@@ -26,35 +26,32 @@ export default function AboutSection() {
             <h4 className="text-xl font-bold text-white">Who I Am</h4>
           </div>
           
-          <div className="space-y-4 text-zinc-400 font-normal leading-relaxed flex-grow">
+          <div className="space-y-4 text-zinc-400 text-sm sm:text-base font-normal leading-relaxed flex-grow">
             <p>
               I am an Information Science student and passionate full-stack developer specializing in the MERN stack, System Design, and Data Structures & Algorithms. My mission is to architect digital experiences that are performant, scalable, and deeply accessible.
             </p>
             <p>
               As a 3x hackathon winner (securing 2nd Prize at LUMINIX'26 and 1st Prize at AIdeastorm '26) and active open source leader—serving as Project Admin at Open Source Connect India 2026 and contributor at Social Winter of Code (SWOC)—I love solving real-world challenges with applied AI and robust architecture.
             </p>
-            <div className="flex items-center gap-4 mt-8 pt-6 border-t border-white/5">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 mt-8 pt-6 border-t border-white/5">
               <div className="flex flex-col">
-                <span className="text-3xl font-black text-white">3x</span>
-                <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider">Hackathons Won</span>
+                <span className="text-2xl sm:text-3xl font-black text-white">3x</span>
+                <span className="text-[10px] sm:text-xs font-mono text-cyan-400 uppercase tracking-wider">Hackathons Won</span>
               </div>
-              <div className="w-[1px] h-10 bg-white/10"></div>
-              <div className="flex flex-col">
-                <span className="text-3xl font-black text-white">2+</span>
-                <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider">Open Source Orgs</span>
+              <div className="flex flex-col border-l border-white/10 pl-2 sm:pl-4">
+                <span className="text-2xl sm:text-3xl font-black text-white">2+</span>
+                <span className="text-[10px] sm:text-xs font-mono text-cyan-400 uppercase tracking-wider">Open Source Orgs</span>
               </div>
-              <div className="w-[1px] h-10 bg-white/10"></div>
-              <div className="flex flex-col">
-                <span className="text-3xl font-black text-white">15+</span>
-                <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider">Projects Built</span>
+              <div className="flex flex-col border-l border-white/10 pl-2 sm:pl-4">
+                <span className="text-2xl sm:text-3xl font-black text-white">15+</span>
+                <span className="text-[10px] sm:text-xs font-mono text-cyan-400 uppercase tracking-wider">Projects Built</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Card 2: Photo */}
-        {/* Card 2: Photo */}
-        <div className="flex flex-col h-full items-center justify-center relative">
+        <div className="flex flex-col h-full items-center justify-center relative w-full overflow-hidden py-2">
           <ProfileCard
             name="Ansika Singh"
             title="Software Engineer"
@@ -64,7 +61,7 @@ export default function AboutSection() {
             avatarUrl="/profile.jpg"
             showUserInfo={true}
             enableTilt={true}
-            enableMobileTilt={true}
+            enableMobileTilt={false}
             onContactClick={() => {
               const contactSection = document.getElementById("contact");
               if (contactSection) {

@@ -18,50 +18,50 @@ export default function ContactSection() {
       id="contact"
       className="w-full relative flex flex-col items-center"
     >
-      <div className="w-full max-w-4xl bg-zinc-900/60 backdrop-blur-lg border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+      <div className="w-full max-w-4xl bg-zinc-900/60 backdrop-blur-lg border border-white/10 rounded-3xl p-5 sm:p-8 md:p-12 shadow-2xl relative overflow-hidden">
         {/* Ambient background glow inside the container */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[radial-gradient(circle,rgba(6,182,212,0.1)_0%,transparent_60%)] -z-10 blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[radial-gradient(circle,rgba(99,102,241,0.1)_0%,transparent_60%)] -z-10 blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-64 sm:w-96 h-64 sm:h-96 bg-[radial-gradient(circle,rgba(6,182,212,0.1)_0%,transparent_60%)] -z-10 blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-64 sm:w-96 h-64 sm:h-96 bg-[radial-gradient(circle,rgba(99,102,241,0.1)_0%,transparent_60%)] -z-10 blur-3xl"></div>
 
-        <div className="text-center mb-12">
-          <h3 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-4">Let's Connect</h3>
-          <p className="text-zinc-400 max-w-lg mx-auto">
+        <div className="text-center mb-8 sm:mb-12">
+          <h3 className="text-2xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-2 sm:mb-4">Let's Connect</h3>
+          <p className="text-zinc-400 text-xs sm:text-base max-w-lg mx-auto">
             Whether you have a question, a project idea, or just want to say hi, my inbox is always open.
           </p>
         </div>
 
         <div className="flex flex-col items-center justify-center">
           {/* Contact Details */}
-          <div className="flex flex-col justify-center space-y-8 w-full max-w-md bg-white/5 p-8 rounded-2xl border border-white/10">
-            <div className="flex items-center gap-4">
-              <div className="p-3 rounded-full bg-cyan-500/10 text-cyan-400 shrink-0">
-                <Mail size={24} />
+          <div className="flex flex-col justify-center space-y-6 sm:space-y-8 w-full max-w-md bg-white/5 p-4 sm:p-8 rounded-2xl border border-white/10">
+            <div className="flex items-center gap-3 sm:gap-4">
+              <div className="p-2.5 sm:p-3 rounded-full bg-cyan-500/10 text-cyan-400 shrink-0">
+                <Mail size={20} className="sm:w-6 sm:h-6" />
               </div>
-              <div>
-                <h5 className="text-sm font-mono text-zinc-500 uppercase tracking-wider mb-1">Email</h5>
-                <a href="mailto:ansikasingh2604@gmail.com" className="text-white hover:text-cyan-400 text-lg font-medium transition-colors">
+              <div className="min-w-0 flex-1">
+                <h5 className="text-[11px] sm:text-sm font-mono text-zinc-500 uppercase tracking-wider mb-0.5 sm:mb-1">Email</h5>
+                <a href="mailto:ansikasingh2604@gmail.com" className="text-white hover:text-cyan-400 text-sm sm:text-base md:text-lg font-medium transition-colors break-all">
                   ansikasingh2604@gmail.com
                 </a>
               </div>
             </div>
 
-            <div className="flex items-center gap-4">
-              <div className="p-3 rounded-full bg-emerald-500/10 text-emerald-400 shrink-0">
-                <MapPin size={24} />
+            <div className="flex items-center gap-3 sm:gap-4">
+              <div className="p-2.5 sm:p-3 rounded-full bg-emerald-500/10 text-emerald-400 shrink-0">
+                <MapPin size={20} className="sm:w-6 sm:h-6" />
               </div>
               <div>
-                <h5 className="text-sm font-mono text-zinc-500 uppercase tracking-wider mb-1">Location</h5>
-                <p className="text-white text-lg font-medium">Bangalore, Karnataka, India</p>
+                <h5 className="text-[11px] sm:text-sm font-mono text-zinc-500 uppercase tracking-wider mb-0.5 sm:mb-1">Location</h5>
+                <p className="text-white text-sm sm:text-base md:text-lg font-medium">Bangalore, Karnataka, India</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4">
-              <div className="p-3 rounded-full bg-blue-500/10 text-blue-400 shrink-0">
-                <GraduationCap size={24} />
+            <div className="flex items-center gap-3 sm:gap-4">
+              <div className="p-2.5 sm:p-3 rounded-full bg-blue-500/10 text-blue-400 shrink-0">
+                <GraduationCap size={20} className="sm:w-6 sm:h-6" />
               </div>
               <div>
-                <h5 className="text-sm font-mono text-zinc-500 uppercase tracking-wider mb-1">Education</h5>
-                <p className="text-white text-lg font-medium">B.E. Information Science, Cambridge Institute of Technology</p>
+                <h5 className="text-[11px] sm:text-sm font-mono text-zinc-500 uppercase tracking-wider mb-0.5 sm:mb-1">Education</h5>
+                <p className="text-white text-xs sm:text-sm md:text-base font-medium">B.E. Information Science, Cambridge Institute of Technology</p>
               </div>
             </div>
 

@@ -105,40 +105,43 @@ export default function ExperienceSection() {
   ];
 
   return (
-    <section id="experience" className="w-full relative mt-20 mb-20 selection:bg-cyan-500/30">
-      <div className="mb-24 flex flex-col items-center text-center">
-        <h2 className="text-4xl md:text-6xl font-black text-white tracking-tight mb-4">
+    <section id="experience" className="w-full relative mt-12 sm:mt-20 mb-12 sm:mb-20 overflow-hidden selection:bg-cyan-500/30">
+      <div className="mb-12 sm:mb-20 md:mb-24 flex flex-col items-center text-center px-2">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight mb-4">
           Professional Trajectory
         </h2>
         <div className="flex items-center gap-4 opacity-60">
-          <div className="h-[1px] w-12 bg-cyan-500"></div>
-          <p className="text-[10px] md:text-xs tracking-[0.3rem] uppercase text-cyan-400 font-bold">
+          <div className="h-[1px] w-8 sm:w-12 bg-cyan-500"></div>
+          <p className="text-[10px] sm:text-xs tracking-[0.2em] sm:tracking-[0.3rem] uppercase text-cyan-400 font-bold">
             Experience & Impact
           </p>
-          <div className="h-[1px] w-12 bg-cyan-500"></div>
+          <div className="h-[1px] w-8 sm:w-12 bg-cyan-500"></div>
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto relative pb-28">
+      <div className="max-w-4xl mx-auto relative pb-8 sm:pb-16 md:pb-28">
         {experiences.map((exp, index) => {
-          // Dynamic calculation for sticky stacking
+          // Dynamic calculation for desktop sticky stacking
           const topPosition = 90 + index * 54;
           const zIndex = 10 + index;
           
           return (
             <div 
               key={exp.id}
-              style={{ top: `${topPosition}px`, zIndex }}
-              className={`sticky transition-all duration-300 ${
-                index === experiences.length - 1 ? 'mb-0' : 'mb-24 md:mb-32'
+              style={{
+                zIndex,
+                ['--sticky-top' as any]: `${topPosition}px`
+              }}
+              className={`relative md:sticky md:[top:var(--sticky-top)] transition-all duration-300 ${
+                index === experiences.length - 1 ? 'mb-0' : 'mb-6 sm:mb-10 md:mb-28'
               }`}
             >
-              <div className="relative overflow-hidden rounded-2xl bg-zinc-950 border border-white/10 shadow-[0_-15px_40px_rgba(0,0,0,0.8)] transition-all duration-500 hover:border-cyan-500/60 group">
+              <div className="relative overflow-hidden rounded-2xl bg-zinc-950 border border-white/10 shadow-[0_-10px_30px_rgba(0,0,0,0.6)] md:shadow-[0_-15px_40px_rgba(0,0,0,0.8)] transition-all duration-500 hover:border-cyan-500/60 group">
                 
                 {/* Header */}
-                <div className="bg-zinc-900 border-b border-white/5 px-6 md:px-10 py-3.5 flex items-center justify-between gap-4">
-                  <div className="flex items-center gap-3">
-                    <span className="text-xs md:text-sm font-bold tracking-widest uppercase text-cyan-400">
+                <div className="bg-zinc-900 border-b border-white/5 px-4 sm:px-6 md:px-10 py-3 sm:py-3.5 flex flex-wrap items-center justify-between gap-2 sm:gap-4">
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <span className="text-xs sm:text-sm font-bold tracking-wider sm:tracking-widest uppercase text-cyan-400">
                       {exp.id} // {exp.company.toUpperCase()}
                     </span>
                     <div className="hidden sm:block w-4 h-[1px] bg-cyan-500/40"></div>
@@ -147,7 +150,7 @@ export default function ExperienceSection() {
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-cyan-400 px-2.5 py-0.5 border border-cyan-500/30 bg-[#0a0b0e] rounded-full">
+                    <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-cyan-400 px-2 sm:px-2.5 py-0.5 border border-cyan-500/30 bg-[#0a0b0e] rounded-full">
                       {exp.type}
                     </span>
                     <span className="hidden md:inline-flex items-center gap-1 text-[10px] font-bold tracking-widest uppercase text-white bg-cyan-500/10 border border-cyan-500/20 px-2.5 py-0.5 rounded-full">
@@ -158,47 +161,47 @@ export default function ExperienceSection() {
                 </div>
 
                 {/* Body */}
-                <div className="p-6 md:p-10">
-                  <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-6">
+                <div className="p-4 sm:p-6 md:p-10">
+                  <div className="flex flex-col md:flex-row md:items-start justify-between gap-3 md:gap-4 mb-4 sm:mb-6">
                     <div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-2">
+                      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight mb-1 sm:mb-2">
                         {exp.role}
                       </h3>
                       <div className="flex items-center gap-2">
-                        <span className="text-lg font-medium text-cyan-400">
+                        <span className="text-base sm:text-lg font-medium text-cyan-400">
                           {exp.company}
                         </span>
                       </div>
                     </div>
                     
-                    <div className="flex flex-col md:items-end text-xs text-zinc-400 space-y-2">
-                      <div className="flex items-center gap-2">
-                        <Calendar className="w-4 h-4 text-cyan-500" />
+                    <div className="flex flex-row md:flex-col items-center md:items-end flex-wrap gap-3 md:gap-2 text-xs text-zinc-400">
+                      <div className="flex items-center gap-1.5 sm:gap-2">
+                        <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-cyan-500 shrink-0" />
                         <span>{exp.date}</span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <MapPin className="w-4 h-4 text-cyan-500" />
+                      <div className="flex items-center gap-1.5 sm:gap-2">
+                        <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-cyan-500 shrink-0" />
                         <span>{exp.location}</span>
                       </div>
                     </div>
                   </div>
 
-                  <div className="w-full h-[1px] bg-gradient-to-r from-cyan-500/40 via-white/10 to-transparent mb-6"></div>
+                  <div className="w-full h-[1px] bg-gradient-to-r from-cyan-500/40 via-white/10 to-transparent mb-4 sm:mb-6"></div>
 
-                  <ul className="space-y-3 mb-8">
+                  <ul className="space-y-2.5 sm:space-y-3 mb-6 sm:mb-8">
                     {exp.description.map((item, i) => (
-                      <li key={i} className="flex items-start gap-3 text-sm md:text-base text-zinc-300 leading-relaxed">
-                        <span className="text-cyan-500 text-lg leading-none mt-0.5">•</span>
+                      <li key={i} className="flex items-start gap-2.5 sm:gap-3 text-xs sm:text-sm md:text-base text-zinc-300 leading-relaxed">
+                        <span className="text-cyan-500 text-base sm:text-lg leading-none mt-0.5">•</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
 
-                  <div className="flex flex-wrap gap-2 pt-2">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-2">
                     {exp.skills.map((skill, i) => (
                       <span 
                         key={i}
-                        className="text-[11px] font-bold tracking-wider uppercase text-zinc-400 bg-[#0a0b0e] border border-white/10 px-3.5 py-1.5 rounded-md group-hover:border-cyan-500/30 group-hover:text-white transition-all shadow-sm"
+                        className="text-[10px] sm:text-[11px] font-bold tracking-wider uppercase text-zinc-400 bg-[#0a0b0e] border border-white/10 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-md group-hover:border-cyan-500/30 group-hover:text-white transition-all shadow-sm"
                       >
                         {skill}
                       </span>

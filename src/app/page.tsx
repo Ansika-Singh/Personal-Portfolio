@@ -31,7 +31,7 @@ export default function Home() {
   }, [introFinished]);
 
   return (
-    <main className="relative w-full min-h-screen bg-[#0a0b0e] text-zinc-300 font-sans selection:bg-cyan-500/30">
+    <main className="relative w-full min-h-screen bg-[#0a0b0e] text-zinc-300 font-sans selection:bg-cyan-500/30 overflow-x-hidden">
       
       <AnimatePresence>
         {!introFinished && (
@@ -50,7 +50,7 @@ export default function Home() {
         <Navbar />
         
         {/* Main Layout Container with strict vertical flow */}
-        <div className="flex flex-col space-y-28 max-w-6xl mx-auto w-full px-6 py-20 relative z-10">
+        <div className="flex flex-col space-y-16 sm:space-y-24 md:space-y-28 max-w-6xl mx-auto w-full px-4 sm:px-6 py-12 sm:py-20 relative z-10 overflow-x-hidden">
           <HeroSection />
           <AboutSection />
           <SkillsSection />
